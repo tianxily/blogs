@@ -26,3 +26,13 @@ function readpassage(id){
         });
     });
 }
+function readtags(id){
+    $.getJSON('/json/'+id+'.json',function(data){
+        $('.load').css('display','none');
+        $.each(data, function(i, item) {
+            $('box').append(
+                '<h1><a href="'+item.url+'">'+item.name+'</a></h1><hr />'
+            );
+        });
+    });
+}
