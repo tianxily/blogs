@@ -1,0 +1,138 @@
+a{
+    text-decoration: none;
+}
+.content{
+    margin-top: 64px;
+    height: 100%;
+}
+.content .image{
+    width: 100%;
+    height: 80%;
+    background: url('https://c.pxhere.com/photos/28/5c/love_heart_sunset_sun_light-335.jpg!d');
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+}
+.content .image #subtitle{
+    margin: 0 auto;
+    font-weight: 100;
+    font-size: 36px;
+}
+.content .image #subtitle,.typed-cursor{
+    color: #fff;
+}
+.content .article-list{
+    width: 90%;
+    min-height: 300px;
+    margin: 0px 5%;
+    position: relative;
+    top: -150px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 15px 35px rgb(50 50 93 / 10%), 0 5px 15px rgb(0 0 0 / 7%) !important;
+}
+.content .load{
+    display: grid;
+    place-content: center;
+    min-height: 300px;
+    text-align: center;
+}
+.content .load .ico-load{
+    width: 32px;
+    height: 32px;
+    background: url(/images/loadinglit.gif);
+    background-size: cover;
+    background-repeat: repeat;
+}
+.content .article-list .article-item{
+    position: relative;
+    top: 30px;
+    margin: 0px 30px;
+    border: solid 1px rgb(0 0 0 / 5%);
+    box-shadow: 0 1px 4px 1px rgb(0 0 0 / 5%);
+    background-color: #fff;
+    border-radius: 10px;
+    -webkit-transition: .5s ease-out;
+    transition: .5s ease-out;
+    padding: 1em;
+}
+.content .article-list .article-item a{
+    color: #2ca6cb;
+}
+.content .article-list .article-item:hover{
+    background-color: #2c2c2c;
+    -webkit-transition: background-color .5s;
+    transition: background-color .5s;
+    color: #fff;
+}
+.content .article-list .article-item .article-title{
+    font-size: 1.5em;
+    padding-bottom: 20px;
+}
+.content .article-list .article-item .article-title .article-tags{
+    background-color: #BEEAE9 !important;
+    color: #fff !important;
+    font-size: 16px !important;
+    padding: 5px 8px !important;
+    margin-right: 10px;
+    display: inline-block;
+    border-radius: 3px;
+}
+.content .article-list .article-item .article-content{
+    margin-bottom: 10px;
+}
+.content .article-list .article-item .article-info{
+    border-top: 1px solid #F4F7F7;
+    padding-top: 10px;
+}
+.content .article-list .article-item .article-info .fa{
+    margin-right: 15px;
+}
+.content .article-list box{
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+.content .article-list box h1{
+    color: #000;
+    font-size: 32px;
+    font-weight: 100;
+    position: relative;
+    top: 5px;
+}
+.content .article-list box h1::before{
+    content: '';
+    width: 0px;
+    padding-left: 5px;
+    margin-right: 20px;
+    background-color: #49a09d;
+}
+.content .article-list box hr{
+    position: relative;
+    left: -5px;
+}
+.content .article-list box info::before{
+    content: '文章信息：';
+    font-size: 24px;
+}
+.content .article-list box info p{
+    position: relative;
+    left: 20px;
+    margin-bottom: 5px;
+}
+.content .article-list box info #date::before{
+    content: '——日期：';
+}
+.content .article-list box info #author::before{
+    content: '——作者：';
+}
+.content .article-list box info #other::before{
+    content: '——其他信息：';
+}
+@media screen and (max-width: 1222px) {
+    .content .image #subtitle{
+        font-size: 16px;
+    }
+}
